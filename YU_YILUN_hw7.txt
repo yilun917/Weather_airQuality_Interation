@@ -1,0 +1,41 @@
+YU_YILUN_hw7
+
+Problem 1:
+I was interested in study the effect of weather on air quality. Obviously the weather would not be the primary impact on air quality, but if I even the impact of other factors by collecting the data from all kinds of areas across the country. Also, to ensure I got an relatively accurate weather impact, I also got the average air quality of the area scraped. Therefore, the I can know the current air quality compared to the previous average.
+
+Note: The source were changed from HW4 due to access reasons.
+
+
+Problem 2:
+The following is the printed result when running my program.
+
+This pandas data frame gives the impact of each kind of weather on air quality index on average.
+Negative number means it makes the air quality better, vice versa.
+
+Result:
+           weather  Average Impact
+         clear sky       -3.669935
+        few clouds        4.437500
+              rain      -14.230769
+     broken clouds       -8.125000
+       shower rain       -8.625000
+              mist      -13.375000
+  scattered clouds      -16.100000 
+
+
+Additional result:
+Only few clouds will cause the air quality index to slightly increase, therefore meaning the air quality reduced. Also, Scattered clouds cloud improve the air quality the most according to the the limited data. What's interesting is that rain has the second biggest positive impact on air quality which is expected, as the rain could flush the dusts in the air to the ground.
+
+
+Problem 3:
+The scraping from webpage and the APIs didn't create too much trouble, but it was the cooperation between them really a headache. The output of the webpage usually is not uniform. A lot of error catch and transfer need to be done before the data can be fed into the the following APIs. For example, the states and cities got from airnow website cannot be fed into air visual API as the latter takes in geo locations, thus Google map API is needed to transfer one to another.
+
+
+Problem 4:
+I would wish I have more experience in web scarping and database. I solved all the problems while doing this project, however they took me a long time to do. Some of the problems I had to come around using another way. Had I equipped with more knowledge, I will not spend so long and the program would be better.
+
+
+Problem 5:
+Due the lack of data on some of areas scrapped by the previous data source, the total data is only about 100 cities despite I scraped all cities in US that have data on the webpage. The conclusion might not be so robust. The next thing to do can be improve the cooperation problems, more cities can be added to database, thus creating a more convincing result.
+
+
