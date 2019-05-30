@@ -53,7 +53,7 @@ def epa(state, num=100):  # select only 20 cities from a state
 
 # api function for air visual, current weather for the location
 def airvisual(lat, lng):
-    key = "55LrjpnDwtTjaYvfb"    #api key
+    key = ""    #api key
     # make request through API
     request = ("https://api.airvisual.com/v2/nearest_city?lat={}&lon={}&key={}".format(lat, lng, key))
 
@@ -77,7 +77,7 @@ def airvisual(lat, lng):
 
 # api function for air now, historical air quality info for the location
 def airnow(lat, long, year_month_date):
-    key = "73B946DD-10DD-453B-9027-E9C99DEDA877"   #api key
+    key = ""   #api key
     dist = "50"
     # make request through API
     request = "http://www.airnowapi.org/aq/forecast/latLong/?format=application/json&latitude={}&longitude={}&" \
@@ -110,7 +110,7 @@ def airnow(lat, long, year_month_date):
 
 # this api is to find the geo location from city and state input
 def city_geo(city, state):
-    key = "AIzaSyCMe6I7s5kDcfRdwAwS98OcH6d45ygomnE"
+    key = ""
     url = "https://maps.googleapis.com/maps/api/geocode/json?address={},+{}&key={}".format(city, state, key)
     try:
         response = requests.get(url).json()
